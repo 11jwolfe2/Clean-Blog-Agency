@@ -1,0 +1,38 @@
+{{ "<!-- Footer section -->" | safeHTML }}
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+
+          {{ range .Site.Params.footer.social }}
+            <li><a href="{{ .link }}" title="{{ .title }}"><i class="fa {{ .icon }}"></i></a></li>
+          {{ end }}
+
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+          {{ range .Site.Params.footer.quicklinks }}
+            <li><a href="{{ .link }}">{{ .text  | markdownify }}</a></li>
+          {{ end }}
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script src="{{ .Site.BaseURL }}/js/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="{{ .Site.BaseURL }}/js/bootstrap.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="{{ .Site.BaseURL }}/js/clean-blog.js"></script>
+  {{ template "_internal/google_analytics.html" . }}
+
+</footer>
