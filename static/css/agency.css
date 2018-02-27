@@ -42,7 +42,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503;
+    color: #b3e430;
 }
 
 h1,
@@ -82,9 +82,9 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
+    border-color: #b3e430;/*changed from f6bf01*/
     color: #fff;
-    background-color: #fec503;
+    background-color: #b3e430;/*changed from fec503*/
 }
 
 .btn-primary:active,
@@ -134,9 +134,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
+    border-color: #91bc1e;/*changed from f6bf01*/
     color: #fff;
-    background-color: #fec503;
+    background-color: #91bc1e;/*changed from fec503 - changes tell me more button collor when hover*/
 }
 
 .btn-xl:active,
@@ -160,8 +160,8 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #b3e430;/*Changed Color from fed136 */
-    background-color: #b3e430;/*Changed Color from fed136 */
+    border-color: #fed136;/*Changed Color from fed136 */
+    background-color: #fed136;/*Changed Color from fed136 */
 }
 
 .btn-xl .badge {
@@ -183,7 +183,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: #91bc1e;/*changed from #fec503 - changes the color of the name text in the top left hand corner*/
 }
 
 .navbar-brand>img {
@@ -249,7 +249,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #fec503;
+    background-color: #b3e430;/*changed from fec503*/
 }
 
 @media(min-width:768px) {
