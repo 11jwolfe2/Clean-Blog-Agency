@@ -2,10 +2,11 @@
 baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "Your Site Name"
-theme = "Agency_Blog"
+theme = "Clean-Blog-Agency"
 canonifyurls = true
 paginate = 10
 disqusShortname = "YourDisqusShortname" #delete or comment to disable Disqus comments
+copyright = "Code released under the Apache 2.0 license."
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "" # delete or comment to disable Google Analytics JS generation
@@ -345,3 +346,14 @@ She worked at Pied Piper for years until they went belly up."""
   name = "Archives"
   url = "/post/"
   weight = -180
+
+#Blog Footer
+[[params.social]]
+  title = "twitter"
+  url = "https://twitter.com/humboldtux"
+[[params.social]]
+  title = "github"
+  url = "https://github.com/humboldtux"
+[[params.social]]
+  title = "facebook"
+  url = "https://www.facebook.com/FACEBOOKHANDLE"
