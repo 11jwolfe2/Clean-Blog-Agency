@@ -2,10 +2,10 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    {{ if isset .Params "image" }}<header class="intro-header" style="background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('{{ .Site.BaseURL }}/{{ .Params.image }}');width: 1900px; position: relative;">
-    <!--<header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.image }}')">-->
+    {{ if isset .Params "image" }}<header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/{{ .Params.image }}'); width: 1900px; position: relative;">
       {{ else }}<header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/post-bg.jpg')">
     {{ end }}
+      <div class="overlay"></div>
       <div class="container">
         <div class="row">
            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
