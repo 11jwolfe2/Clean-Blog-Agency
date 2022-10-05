@@ -13,10 +13,6 @@
 
     <title>{{ .Title }} -- {{ .Site.Title }}</title>
 
-    {{ if .RSSLink }}
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ .Site.BaseURL }}/css/bootstrap.min.css" rel="stylesheet">
